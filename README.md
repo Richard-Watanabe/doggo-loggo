@@ -35,6 +35,7 @@ Try the application live at [https://doggo-loggo.web.app](https://doggo-loggo.we
 - User can add a new dog.
 - User can see a list of their dog.
 - User can switch between dogs.
+- User can delete logs.
 
 ## Preview
 
