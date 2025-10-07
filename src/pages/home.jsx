@@ -155,7 +155,7 @@ export default function Home() {
         </div>
 
         <div className="log-list">
-          <LogList logs={logs} />
+          <LogList logs={logs} onLogDeleted={(deletedId) => setLogs((prev) => prev.filter((l) => l.logId !== deletedId)) } />
         </div>
 
         <div className="my-auto justify-content-center align-items-center d-flex">
@@ -165,5 +165,3 @@ export default function Home() {
     </div>
   );
 }
-
-Home.contextType = AppContext;
