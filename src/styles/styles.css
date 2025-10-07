@@ -1,0 +1,599 @@
+:root {
+  --accent: #f1a93c;
+  --accent-hover: #fff5e7;
+  --bg-soft: #fff5e7;
+  --text-dark: #333;
+}
+
+body {
+  background-color: var(--accent);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: var(--text-dark);
+  overflow-y: hidden;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row !important;
+}
+
+.name-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-button { margin-top: 1rem; }
+
+.sign-in-text {
+  margin-top: 0;
+}
+
+.dog-name {
+  margin-right: 1rem;
+}
+
+/* ========= Containers ========= */
+.full-screen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-panel {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.inner-form {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  padding: 2rem;
+  width: calc(100% - 8rem);
+  max-width: 500px;
+  min-height: auto;
+  overflow: visible;
+}
+
+.inner-main {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  padding: 2rem;
+  width: calc(90vw - 15rem);
+  max-width: 900px;
+  min-height: calc(100vh - 8rem);
+  overflow-y: auto;
+}
+
+
+/* ========= Logo ========= */
+.doggo-logo {
+  width: 12rem;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.menu-doggo-logo {
+  height: 6rem;
+  width: 6rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* ========= Forms ========= */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  width: 90%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 4px rgba(241, 169, 60, 0.5);
+}
+
+.input-custom {
+  width: 75%;
+}
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-left: 1rem;
+}
+
+button,
+.btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.sign-link {
+  font-size: 0.9rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.sign-link:hover {
+  text-decoration: underline;
+}
+
+.demo-btn {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 80%;
+}
+
+.text-muted {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.custom-plus-button {
+  border: 3px solid #328755;
+  border-radius: 15px;
+  color: #328755;
+  text-decoration: none;
+  font-size: 4rem;
+  transition: 0.2s;
+  line-height: 2.7rem;
+  position: relative;
+  bottom: 3rem;
+  float: right;
+}
+
+.custom-plus-button:hover {
+  color: white;
+  background-color: #328755;
+}
+
+.plus-span {
+  position: relative;
+  top: 0.05rem;
+}
+
+/* ===== Auth Pages (Sign Up / Sign In) ===== */
+.auth-card {
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  padding: 2rem 3rem 2rem 2rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.full-screen.auth-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-card header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.auth-card .doggo-logo {
+  width: 12rem;
+  margin: 0 auto 1rem;
+}
+
+.auth-card .text-muted {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.sign-form {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.text-center { text-align: center; }
+
+.auth-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.auth-actions .btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.auth-actions .btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+
+/* ========= Drawer ========= */
+.hamburger-icon {
+  width: 28px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 20;
+  transition: opacity 0.3s;
+}
+
+.overlay.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.drawer-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.25);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 21;
+}
+
+.drawer-content.open {
+  transform: translateX(0);
+}
+
+.menu {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.menu-items:hover {
+  background: var(--bg-soft);
+}
+
+.menu-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+/* ========= Home ========= */
+.home-image-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.home-image {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  display: block;
+}
+
+.change-image {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 1rem auto;
+  background-color: #fff5e7;
+}
+
+.edit-photo-btn {
+  position: absolute;
+  bottom: -0.5rem;
+  right: calc(50% - 7.5rem);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  transition: background 0.2s;
+}
+
+.edit-photo-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.camera-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.camera-icon,
+.edit-icon {
+  width: 20px;
+  height: auto;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* ========= Logs ========= */
+.log-list {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-soft);
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.log img {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.75rem;
+  border-radius: 4px;
+}
+
+/* ========= Categories ========= */
+.category {
+  background: var(--bg-soft);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+}
+
+.category-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.75rem;
+}
+
+.category-name {
+  font-size: 1.2rem;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+/* ========= Dog List ========= */
+.dog-card {
+  display: flex;
+  align-items: center;
+  background: var(--bg-soft);
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.dog-card:hover {
+  transform: translateY(-3px);
+}
+
+.dog-list-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  margin-right: 1rem;
+}
+
+.dog-list-name {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.dog-list-name:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ========= Misc ========= */
+.go-back {
+  display: inline-block;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.go-back:hover {
+  color: white;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .inner-form {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 2rem;
+    padding: 2rem;
+    width: calc(100% - 4rem);
+    max-width: 500px;
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .home-image {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .home-image-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .input-custom {
+    width: 70%;
+  }
+
+  .edit-photo-btn {
+    position: absolute;
+    bottom: -0.5rem;
+    right: calc(50% - 7.5rem);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.4rem 0.6rem;
+    transition: background 0.2s;
+  }
+
+  .camera-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .log-list {
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}
