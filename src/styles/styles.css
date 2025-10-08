@@ -608,12 +608,16 @@ button:hover,
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin: 2rem;
+    margin: 3rem;
     padding: 2rem;
     width: calc(100% - 4rem);
     max-width: 500px;
     min-height: auto;
     overflow: visible;
+  }
+
+  .inner-main {
+    min-height: calc(100vh - 4rem);
   }
 
   .home-image {
